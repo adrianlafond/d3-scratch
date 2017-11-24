@@ -1,0 +1,8 @@
+.tests {
+  margin: 0 10px;
+}
+
+.tests__item {
+  font-size: 24px;
+  font-weight: bold;
+}

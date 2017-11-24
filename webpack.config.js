@@ -19,6 +19,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.csv$/,
+        loader: 'file-loader',
+        options: {
+          publicPath: './public',
+          name: 'assets/[name].[ext]',
+        },
+      },
+      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',

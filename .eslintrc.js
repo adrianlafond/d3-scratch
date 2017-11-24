@@ -7,6 +7,7 @@ module.exports = {
     }],
     'comma-dangle': ['error', 'always-multiline'],
     'strict': 0,
+    'key-spacing': ['off'],
   },
   parser: 'babel-eslint',
 }
