@@ -32,7 +32,6 @@ module.exports = {
         loader: 'eslint-loader',
         options: {
           useEslintrc: true,
-          // configFile: 'eslintrc-config.js',
         }
       },
       {
