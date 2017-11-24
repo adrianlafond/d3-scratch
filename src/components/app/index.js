@@ -29,7 +29,7 @@ export default class App {
       this.nav.update(hash)
       this.pad.update(hash)
     } else {
-      window.location = `/#${this.pages[0]}`
+      window.location = `#${this.pages[0]}`
     }
   }
 }

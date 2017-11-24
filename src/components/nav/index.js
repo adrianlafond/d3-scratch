@@ -34,6 +34,6 @@ export default class Nav {
   }
 
   onChange = (event) => {
-    window.location = `/#${event.target.value}`
+    window.location = `#${event.target.value}`
   }
 }
