@@ -31,8 +31,8 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'eslint-loader',
         options: {
-          useEslintrc: false,
-          configFile: 'eslintrc-config.js',
+          useEslintrc: true,
+          // configFile: 'eslintrc-config.js',
         }
       },
       {

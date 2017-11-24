@@ -1,3 +1,7 @@
 import './index.css'
+import App from './components/app'
+import pages from './pages.json'
 
-export default {}
+const app = new App(pages)
+
+export default { app }

@@ -10,7 +10,11 @@ body {
   text-align: center;
 }
 
+:root {
+  --main-width: 80%;
+}
+
 main {
-  width: 80%;
+  width: var(--main-width);
   margin: 0 auto;
 }

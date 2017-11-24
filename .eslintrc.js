@@ -6,5 +6,7 @@ module.exports = {
       'named': 'never',
     }],
     'comma-dangle': ['error', 'always-multiline'],
-  }
+    'strict': 0,
+  },
+  parser: 'babel-eslint',
 }
