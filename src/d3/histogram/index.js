@@ -12,6 +12,22 @@ export default class Histogram {
     noise.fetch().then(data => noise.hours(data)).then(this.render.bind(this))
   }
 
+  onBinOver(d, i) {
+    d3.select(this)
+      // .transition()
+      // .duration(250)
+      .style('fill', 'blue')
+  }
+
+  onBinOut(d, i) {
+    const el = d3.select(this)
+    el
+      .transition()
+      .duration(2000)
+      .ease(d3.easeCubicOut)
+      .style('fill', el.attr('data-fill'))
+  }
+
   render(hours) {
     const svg = d3.select(CONTAINER)
       .append('svg')
@@ -47,10 +63,13 @@ export default class Histogram {
       .append('rect')
       .classed('histogram__rect', true)
       .style('fill', d => color(d / histogramMax))
+      .attr('data-fill', d => color(d / histogramMax))
       .attr('x', (d, i) => i * BIN_WIDTH)
       .attr('y', d => BIN_HEIGHT - d / histogramMax * BIN_HEIGHT)
       .attr('width', BIN_WIDTH - MARGIN)
       .attr('height', d => d / histogramMax * BIN_HEIGHT)
+      .on('mouseover', this.onBinOver)
+      .on('mouseout', this.onBinOut)
   }
 
   renderLabels(svg) {
