@@ -71,7 +71,7 @@ export default class Histogram {
       .attr('y', 0)
       .attr('text-anchor', 'left')
 
-    const x = [0, CONTAINER_WIDTH / 2 - 10]
+    const x = [1, CONTAINER_WIDTH / 2 - 9]
     gAxis.selectAll('path.histogram_label-line')
       .data(x)
       .enter()
