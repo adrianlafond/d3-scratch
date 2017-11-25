@@ -36,7 +36,7 @@ export default class Treemap {
       .attr('class', 'pack__node-text')
       .attr('text-anchor', 'middle')
       .attr('x', d => (d.x1 - d.x0) / 2)
-      .attr('y', d => (d.y1 - d.y0) / 2)
+      .attr('y', d => (d.y1 - d.y0) / 2 + 5)
   }
 
   destroy() {
