@@ -1,5 +1,5 @@
 import * as d3 from 'd3'
-import { CONTAINER } from '../constants'
+import { CONTAINER } from '../../constants'
 import './tests.css'
 
 /**

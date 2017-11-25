@@ -1,0 +1,15 @@
+/* .histogram {} */
+/* .histogram__rect {
+  fill: #930;
+} */
+
+.histogram__label {
+  font: var(--font-family);
+  font-size: 12px;
+  fill: '#000';
+}
+
+.histogram_label-line {
+  stroke-width: '1px';
+  stroke: '#000';
+}

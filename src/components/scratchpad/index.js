@@ -1,7 +1,7 @@
 import './index.css'
 import Test1 from '../../d3/tests/test1'
 import Test2 from '../../d3/tests/test2'
-import CSVTest from '../../d3/csv'
+import Histogram from '../../d3/histogram'
 
 /**
  *
@@ -27,8 +27,8 @@ export default class D3Scratchpad {
       case 'test2':
         this.content = new Test2()
         break
-      case 'csv':
-        this.content = new CSVTest()
+      case 'histogram':
+        this.content = new Histogram()
         break
       default:
         break

@@ -1,3 +1,4 @@
+import { CONTAINER_WIDTH } from '../../constants'
 import './index.css'
 
 /**
@@ -11,6 +12,7 @@ export default class Nav {
     if (!this.el) {
       throw new Error('No element with class "nav" found!')
     }
+    this.el.style.width = `${CONTAINER_WIDTH}px`
     this.render()
   }
 
