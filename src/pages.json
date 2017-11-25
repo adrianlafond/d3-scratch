@@ -1,5 +1,9 @@
 [
   {
+    "key": "pie",
+    "caption": "Pie chart of noise complaints by zip, sorted by zip"
+  },
+  {
     "key": "treemap",
     "caption": "Hierarchy/treemap: noise complaints by zip code for Jan 1 2015"
   },

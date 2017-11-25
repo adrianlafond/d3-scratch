@@ -4,6 +4,7 @@ import Test2 from '../../d3/tests/test2'
 import Histogram from '../../d3/histogram'
 import Pack from '../../d3/pack'
 import Treemap from '../../d3/treemap'
+import Pie from '../../d3/pie'
 
 /**
  *
@@ -37,6 +38,9 @@ export default class D3Scratchpad {
         break
       case 'treemap':
         this.content = new Treemap()
+        break
+      case 'pie':
+        this.content = new Pie()
         break
       default:
         break
