@@ -2,6 +2,7 @@ import './index.css'
 import Test1 from '../../d3/tests/test1'
 import Test2 from '../../d3/tests/test2'
 import Histogram from '../../d3/histogram'
+import Pack from '../../d3/pack'
 
 /**
  *
@@ -29,6 +30,9 @@ export default class D3Scratchpad {
         break
       case 'histogram':
         this.content = new Histogram()
+        break
+      case 'pack':
+        this.content = new Pack()
         break
       default:
         break

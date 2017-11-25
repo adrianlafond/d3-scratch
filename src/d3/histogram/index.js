@@ -100,6 +100,12 @@ export default class Histogram {
 
   destroy() {
     noise.cancel()
-    d3.select(`${CONTAINER} *`).remove()
+    d3.select(`${CONTAINER}`)
+      .selectAll('.histogram__rect')
+      .on('mouseover', null)
+      .on('mouseout', null)
+    d3.select(`${CONTAINER}`)
+      .selectAll('*')
+      .remove()
   }
 }
