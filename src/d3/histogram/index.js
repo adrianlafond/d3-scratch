@@ -81,5 +81,6 @@ export default class Histogram {
 
   destroy() {
     noise.cancel()
+    d3.select(`${CONTAINER} *`).remove()
   }
 }
