@@ -9,9 +9,7 @@ import './index.css'
 export default class Histogram {
   //
   constructor() {
-    noise.fetch().then(data => noise.hours(data)).then(hours => {
-      this.render(hours)
-    })
+    noise.fetch().then(data => noise.hours(data)).then(this.render.bind(this))
   }
 
   render(hours) {
