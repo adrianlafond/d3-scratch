@@ -41,7 +41,6 @@ export default class Histogram {
       .attr('transform', `translate(10, 10)`)
 
     const color = d3.interpolateRgb('#9cf', '#f00')
-    console.log(color(100 / histogramMax))
     gBins.selectAll('rect')
       .data(histogramBins)
       .enter()
