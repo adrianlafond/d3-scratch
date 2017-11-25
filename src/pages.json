@@ -1,5 +1,14 @@
 [
-  "test1",
-  "test2",
-  "histogram"
+  {
+    "key": "test1",
+    "caption": "Test 1"
+  },
+  {
+    "key": "test2",
+    "caption": "Test 2"
+  },
+  {
+    "key": "histogram",
+    "caption": "Noise complaints by hour for Jan 1 2015"
+  }
 ]

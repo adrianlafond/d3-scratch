@@ -7,13 +7,12 @@ import './index.css'
 export default class Nav {
   //
   constructor(pages) {
-    this.pages = pages
     this.el = document.querySelector('.nav')
     if (!this.el) {
       throw new Error('No element with class "nav" found!')
     }
     this.el.style.width = `${CONTAINER_WIDTH}px`
-    this.render()
+    this.render(pages)
   }
 
   update(page) {
@@ -22,9 +21,9 @@ export default class Nav {
     }
   }
 
-  render() {
-    const options = this.pages.map(item => {
-      return `<option>${item}</option>`
+  render(pages) {
+    const options = pages.map(item => {
+      return `<option>${item.key}</option>`
     }).join('')
     this.el.innerHTML = `<select>${options}</select>`
     this.addEvents()
