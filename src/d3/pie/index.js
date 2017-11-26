@@ -25,6 +25,7 @@ export default class Pie {
     const MIN_RADIUS = 80
     const arc = d3.arc()
       .innerRadius(MIN_RADIUS)
+      .cornerRadius(3)
 
     const color = d3.interpolateRgb('#f90', '#09f')
     const maxComplaints = d3.max(complaints.map(c => c.value))
