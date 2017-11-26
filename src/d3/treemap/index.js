@@ -18,19 +18,21 @@ export default class Treemap {
     const treemap = d3.treemap()
       .size([CONTAINER_WIDTH, CONTAINER_HEIGHT])
       .padding(0)
-    console.log(treemap(root).leaves())
+
     const node = svg.selectAll('.treemap__node')
       .data(treemap(root).leaves())
       .enter()
       .append('g')
       .attr('class', 'pack__node')
       .attr('transform', d => `translate(${d.x0}, ${d.y0})`)
+
     node.append('rect')
       .attr('x', 0)
       .attr('y', 0)
       .attr('width', d => d.x1 - d.x0)
       .attr('height', d => d.y1 - d.y0)
       .style('fill', d => d.color)
+
     node.append('text')
       .text(d => d.data.name)
       .attr('class', 'pack__node-text')
