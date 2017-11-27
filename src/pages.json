@@ -16,6 +16,10 @@
     "caption": "Historgram: noise complaints by hour for Jan 1 2015"
   },
   {
+    "key": "lines",
+    "caption": "Messing around with lines"
+  },
+  {
     "key": "test1",
     "caption": "Test 1"
   },
